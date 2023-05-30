@@ -1,0 +1,123 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+	<head>
+		<?
+    $P_dp1 = '5';
+    $P_dp2 = '4';
+    include "../include/meta.html" 
+    ?>
+	</head>
+
+	<body class="sub-body">
+		<? include "../include/header.html" ?>
+		<? include "../include/sub-visual.html" ?>
+		<? include "../include/sub-nav.html" ?>
+		<main class="main sub-main" id="contents">
+			<section class="section py-30">
+				<div class="container">
+					<h4 class="sub-tit pb-15">개선요청 하기</h4>
+					<form action="./action--view.html" method="post">
+						<ul class="clause_list">
+							<li>
+								<h5>개인정보처리방침</h5>
+								<div class="textarea_box_border">
+									<div class="textarea_box">
+										<? include "../policy/privacy-text.html" ?>
+									</div>
+								</div>
+								<div class="agree_box mt_10">
+									<input type="checkbox" name="yark" value="1" id="yark" title="개인정보처리방침에 동의" class="mr_05" required />
+									<label for="yark">개인정보처리방침에 동의합니다.</label>
+								</div>
+							</li>
+						</ul>
+						<div class="tit-wrap">
+							<span class="table-tit"><span class="necessary"></span>필수입력</span>
+						</div>
+						<table class="table-form-01 type_b">
+							<colgroup>
+								<col class="col_w" />
+								<col width="*" />
+								<col class="col_w" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>요청유형<span class="necessary"></span></th>
+									<td>
+										<select name="category" id="category" required>
+											<option value="" disabled selected hidden>요청유형</option>
+											<option value="1">POS</option>
+											<option value="2">키오스크</option>
+											<option value="3">셀프체크아웃</option>
+											<option value="4">AI냉장고</option>
+											<option value="5">제휴</option>
+											<option value="6">기타</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>이름<span class="necessary"></span></th>
+									<td>
+										<input type="text" name="uname" id="uname" title="이름" maxlength="20" class="input_for" required="" />
+									</td>
+									<th>비밀번호<span class="necessary"></span></th>
+									<td>
+										<input type="password" name="upw" id="upw" title="비밀번호" maxlength="20" class="input_for" required="" placeholder="문의 글 확인을 위한 비밀번호입니다" />
+									</td>
+								</tr>
+								<tr>
+									<th>연락처<span class="necessary"></span></th>
+									<td>
+										<input type="text" name="uptel" id="uptel" title="연락처" maxlength="20" class="input_for" required="" onkeyup="if(isNaN(this.value)) {alert('숫자만 입력해 주세요.');this.value=''};" placeholder="숫자만 입력 가능합니다" />
+									</td>
+									<th>이메일<span class="necessary"></span></th>
+									<td>
+										<input type="text" name="email" id="email" title="이메일" maxlength="100" class="input_for" required="" placeholder="이메일을 입력해주세요" />
+									</td>
+								</tr>
+								<tr>
+									<th>제목</th>
+									<td>
+										<input type="text" name="title" id="title" title="제목" class="input_for" placeholder="제목을 입력해주세요" />
+									</td>
+								</tr>
+								<tr>
+									<th class="align-top">내용</th>
+									<td colspan="3">
+										<textarea name="content" id="content" cols="30" rows="10" placeholder="문의 사항을 입력해주세요."></textarea>
+									</td>
+								</tr>
+								<tr>
+									<th>첨부파일</th>
+									<td>
+										<div class="input_wrap file_box">
+											<p></p>
+											<span class="btn_type_file">찾아보기</span>
+											<input type="file" name="bf_file[]" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>자동입력 <br class="d-none d-lg-block" />방지 코드</th>
+									<td colspan="3">
+										<input type="hidden" maxlength="100" name="code_org" id="code_org" value="753035" />
+										<span class="code">753035</span>
+										<input type="text" name="imagecode" id="imagecode" placeholder="보안문자입력" title="보안문자입력" class="input_for" />
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="d-flex justify-content-center text_center mt_40">
+							<button type="submit" class="btn-type-01 py-5 px-20 rounded-lg">제출하기</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<? include "../include/footer.html" ?>
+		<? include "../include/js.html" ?>
+		<script></script>
+	</body>
+</html>

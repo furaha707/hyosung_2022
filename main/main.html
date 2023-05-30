@@ -1,0 +1,726 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+	<head>
+		<?
+    $P_dp0 = 'main';
+    include "../include/meta.html" 
+    ?>
+		<link rel="stylesheet" href="../assets/css/main.min.css" />
+	</head>
+	<body class="main-body">
+		<? include "../include/header.html" ?>
+
+		<main class="main" id="contents">
+			<!-- S : main-visual -->
+			<section class="main-visual">
+				<h1 class="sr-only">메인비주얼 영역</h1>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- 
+              pc: 1920x840
+              m: 1440x2220 
+            -->
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-lg-block" src="../assets/images/main/main-visual.jpg" alt="메인비주얼" />
+									<img class="d-block d-lg-none" src="../assets/images/main/main-visual-m.jpg" alt="메인비주얼" />
+								</div>
+								<div class="txt-bx">
+									<div class="container">
+										<a href="../application/write.html" class="visual-link">무료 사용신청 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-lg-block" src="../assets/images/main/main-visual.jpg" alt="메인비주얼" />
+									<img class="d-block d-lg-none" src="../assets/images/main/main-visual-m.jpg" alt="메인비주얼" />
+								</div>
+								<div class="txt-bx">
+									<div class="container">
+										<a href="" class="visual-link">무료 사용신청 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-lg-block" src="../assets/images/main/main-visual.jpg" alt="메인비주얼" />
+									<img class="d-block d-lg-none" src="../assets/images/main/main-visual-m.jpg" alt="메인비주얼" />
+								</div>
+								<div class="txt-bx">
+									<div class="container">
+										<a href="" class="visual-link">무료 사용신청 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- 영상 비주얼 영역 -->
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<video class="video-slide" src="../assets/images/main/visual_video_1.mov" autoplay playsinline muted loop poster="../assets/images/main/visual_visdeo_1.jpg"></video>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-control">
+						<div class="container">
+							<button type="button" class="swiper-button swiper-button--prev">
+								<i class="xi-angle-left"></i>
+							</button>
+							<button type="button" class="swiper-button swiper-button--next">
+								<i class="xi-angle-right"></i>
+							</button>
+							<!-- E : Swiper Navigation -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- E : main-visual -->
+
+			<!-- S : section -->
+			<section class="section section1 py-15 py-lg-30">
+				<div class="container">
+					<h1 class="main-tit mb-14">서비스 소개</h1>
+					<div class="swiper-container">
+						<ul class="swiper-wrapper wowrap">
+							<li class="swiper-slide wow fadeInUp">
+								<a href="../service/pos.html">
+									<div class="cont-img">
+										<div class="cont-bg"></div>
+										<img src="../assets/images/main/service01.png" alt="" class="service01" />
+									</div>
+									<p class="cont-tit">POS</p>
+									<p class="cont-txt">소상공인을 위한 무료 POS 프로그램</p>
+								</a>
+							</li>
+							<li class="swiper-slide wow fadeInUp">
+								<a href="../service/kiosk.html">
+									<div class="cont-img">
+										<div class="cont-bg"></div>
+										<img src="../assets/images/main/service02.png" alt="" class="service02" />
+									</div>
+									<p class="cont-tit">키오스크</p>
+									<p class="cont-txt">주문 및 계산은 키오스크에서</p>
+								</a>
+							</li>
+							<li class="swiper-slide wow fadeInUp">
+								<a href="../service/self.html">
+									<div class="cont-img">
+										<div class="cont-bg"></div>
+										<img src="../assets/images/main/service03.png" alt="" class="service03" />
+									</div>
+									<p class="cont-tit">셀프체크아웃</p>
+									<p class="cont-txt">대형마트에서 선택한 Global Top1 제품</p>
+								</a>
+							</li>
+							<li class="swiper-slide wow fadeInUp">
+								<a href="javascript:void(0)">
+									<div class="cont-img">
+										<div class="cont-bg"></div>
+										<img src="../assets/images/main/service04.png" alt="" class="service04" />
+									</div>
+									<p class="cont-tit">AI냉장고</p>
+									<p class="cont-txt">상품을 꺼내기만하면 자동으로<br />계산되는 똑똑한 냉장고</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- E : section -->
+
+			<!-- S : section -->
+			<section class="section section2 pt-15 py-lg-30">
+				<div class="container">
+					<h1 class="main-tit mb-30">매장별 서비스</h1>
+					<div class="swiper-container">
+						<div class="swiper-pagination"></div>
+						<ul class="swiper-wrapper wowrap">
+							<li class="swiper-slide wow fadeInUp">
+								<div class="inner">
+									<div class="service-img">
+										<img src="../assets/images/main/intro-01.png" alt="사진" />
+									</div>
+									<div class="service-txt">
+										<p class="tit pb-4">일반식당</p>
+										<p class="txt">
+											후불 또는 선불, 홀이 있건 없건 효성 POS는 다 돼요 <br class="d-none d-lg-block" />
+											배달 주문도 물론 한번에!
+										</p>
+										<div class="d-flex justify-content-center py-8">
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-ico01.png" alt="아이콘" />
+													<p class="keyword">POS</p>
+												</div>
+											</div>
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-kiosk.png" alt="아이콘" />
+													<p class="keyword">KIOSK</p>
+												</div>
+											</div>
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-delivery.png" alt="아이콘" />
+													<p class="keyword">배달</p>
+												</div>
+											</div>
+										</div>
+										<a href="javascript:void(0)" class="link">보러가기 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide wow fadeInUp">
+								<div class="inner">
+									<div class="service-img">
+										<img src="../assets/images/main/intro-02.png" alt="사진" />
+									</div>
+									<div class="service-txt">
+										<p class="tit pb-4">배달전문식당</p>
+										<p class="txt">
+											배달주문을 원터치로 빠르게 접수하고, <br class="d-none d-lg-block" />
+											배달기사까지 쉽게 호출하세요
+										</p>
+										<div class="d-flex justify-content-center py-8">
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-laptop.png" alt="아이콘" />
+													<p class="keyword">노트북</p>
+												</div>
+											</div>
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-delivery.png" alt="아이콘" />
+													<p class="keyword">배달</p>
+												</div>
+											</div>
+										</div>
+										<a href="javascript:void(0)" class="link">보러가기 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide wow fadeInUp">
+								<div class="inner">
+									<div class="service-img">
+										<img src="../assets/images/main/intro-03.png" alt="사진" />
+									</div>
+									<div class="service-txt">
+										<p class="tit pb-4">카페</p>
+										<p class="txt">
+											효성 POS가 다해주니까, <br class="d-none d-lg-block" />
+											손님이 몰려도 혼자서 충분해요
+										</p>
+										<div class="d-flex justify-content-center py-8">
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-tablet.png" alt="아이콘" />
+													<p class="keyword">태블릿</p>
+												</div>
+											</div>
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-kiosk.png" alt="아이콘" />
+													<p class="keyword">KIOSK</p>
+												</div>
+											</div>
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-delivery.png" alt="아이콘" />
+													<p class="keyword">배달</p>
+												</div>
+											</div>
+										</div>
+										<a href="javascript:void(0)" class="link">보러가기 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide wow fadeInUp">
+								<div class="inner">
+									<div class="service-img">
+										<img src="../assets/images/main/intro-04.png" alt="사진" />
+									</div>
+									<div class="service-txt">
+										<p class="tit pb-4">무인매장</p>
+										<p class="txt">
+											이제 CCTV는 그만 보세요 <br class="d-none d-lg-block" />
+											매장은 효성에게 맡기고, 사장님은 편히 쉬세요
+										</p>
+										<div class="d-flex justify-content-center py-8">
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-self.png" alt="아이콘" />
+													<p class="keyword">셀프체크아웃</p>
+												</div>
+											</div>
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-ref.png" alt="아이콘" />
+													<p class="keyword">AI냉장고</p>
+												</div>
+											</div>
+										</div>
+										<a href="javascript:void(0)" class="link">보러가기 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide wow fadeInUp">
+								<div class="inner">
+									<div class="service-img">
+										<img src="../assets/images/main/intro-05.png" alt="사진" />
+									</div>
+									<div class="service-txt">
+										<p class="tit pb-4">프랜차이즈</p>
+										<p class="txt">F&B 시스템 전문가인 효성과 상의하세요</p>
+										<div class="d-flex justify-content-center pt-8 pb-3">
+											<div class="col-3">
+												<div class="inner">
+													<img src="../assets/images/main/service-ico01.png" alt="아이콘" />
+													<p class="keyword">POS</p>
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="inner">
+													<img src="../assets/images/main/service-kiosk.png" alt="아이콘" />
+													<p class="keyword">KIOSK</p>
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="inner">
+													<img src="../assets/images/main/service-delivery.png" alt="아이콘" />
+													<p class="keyword">배달</p>
+												</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-center pb-8">
+											<div class="col-3">
+												<div class="inner">
+													<img src="../assets/images/main/service-mobile.png" alt="아이콘" />
+													<p class="keyword">Mobile</p>
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="inner">
+													<img src="../assets/images/main/service-digital.png" alt="아이콘" />
+													<p class="keyword">Digital Menu</p>
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="inner">
+													<img src="../assets/images/main/service-did.png" alt="아이콘" />
+													<p class="keyword">DID</p>
+												</div>
+											</div>
+										</div>
+										<a href="javascript:void(0)" class="link">보러가기 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide wow fadeInUp">
+								<div class="inner">
+									<div class="service-img">
+										<img src="../assets/images/main/store01.jpg" alt="" />
+									</div>
+									<div class="service-txt">
+										<p class="tit pb-4">마트/편의점</p>
+										<p class="txt">
+											대형 마트도 선택한 효성 <br class="d-none d-lg-block" />
+											셀프체크아웃으로, 장애 없이 판매 하세요
+										</p>
+										<div class="d-flex justify-content-center py-8">
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-ico01.png" alt="아이콘" />
+													<p class="keyword">POS</p>
+												</div>
+											</div>
+											<div class="col-auto">
+												<div class="inner">
+													<img src="../assets/images/main/service-ico02.png" alt="아이콘" />
+													<p class="keyword">셀프체크아웃</p>
+												</div>
+											</div>
+										</div>
+										<a href="javascript:void(0)" class="link">보러가기 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="swiper-control">
+							<div class="container">
+								<button type="button" class="swiper-button swiper-button--prev">
+									<i class="xi-angle-left"></i>
+								</button>
+								<button type="button" class="swiper-button swiper-button--next">
+									<i class="xi-angle-right"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- E : section -->
+
+			<!-- S : section -->
+			<section class="section section3 py-15 py-lg-30">
+				<div class="container">
+					<div class="title-wrap">
+						<h1 class="main-tit mb-5">사장님 이야기</h1>
+						<h1 class="main-txt mb-15">효성을 만나본 사장님들의 생생한 후기입니다</h1>
+						<a href="javascript:void(0)" class="more-btn"><i class="xi-plus-thin"></i></a>
+					</div>
+					<div class="swiper-container">
+						<ul class="swiper-wrapper wowrap">
+							<li class="swiper-slide wow fadeInUp hover-effect hover-effect--border">
+								<a href="javascript:void(0)" class="review-wrapper hover-effect__wrap">
+									<div class="inner">
+										<div class="img-bx">
+											<img src="../assets/images/main/review01.jpg" alt="썸네일" />
+										</div>
+										<img src="../assets/images/main/brand01.png" alt="반하다" class="brand" />
+									</div>
+									<div class="txt-bx">
+										<p class="comment">
+											프랜차이즈 시작했을 때 막막했는데 효성이 다 알고 있더라고요. 저는 선택만 하면 되니까 너무 편했어요
+											<img src="../assets/images/main/quotes.png" alt="따옴표" class="quote" />
+										</p>
+										<span class="name">반하다앳 본점</span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide wow fadeInUp hover-effect hover-effect--border">
+								<a href="javascript:void(0)" class="review-wrapper hover-effect__wrap">
+									<div class="inner">
+										<div class="img-bx">
+											<img src="../assets/images/main/review02.jpg" alt="썸네일" />
+										</div>
+										<img src="../assets/images/main/brand02.png" alt="누구나쉐프" class="brand" />
+									</div>
+									<div class="txt-bx">
+										<p class="comment">
+											매장은 효성에게 맡기고, 저는 제 일에만 집중할 수 있어 너무 좋아요
+											<img src="../assets/images/main/quotes.png" alt="따옴표" class="quote" />
+										</p>
+										<span class="name">누구나 쉐프 답십리점</span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide wow fadeInUp hover-effect hover-effect--border">
+								<a href="javascript:void(0)" class="review-wrapper hover-effect__wrap">
+									<div class="inner">
+										<div class="img-bx">
+											<img src="../assets/images/main/canbus.png" alt="샘플이미지" />
+										</div>
+										<img src="../assets/images/main/brand03.png" alt="캔버스" class="brand" />
+									</div>
+									<div class="txt-bx">
+										<p class="comment">
+											진짜 최고의 KIOSK예요. 화면도 너무 이쁘고 POS랑 매출 연동도 돼요
+											<img src="../assets/images/main/quotes.png" alt="따옴표" class="quote" />
+										</p>
+										<span class="name">카페캔버스 본점</span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide wow fadeInUp hover-effect hover-effect--border">
+								<a href="javascript:void(0)" class="review-wrapper hover-effect__wrap">
+									<div class="inner">
+										<div class="img-bx">
+											<img src="../assets/images/main/ice.png" alt="샘플이미지" />
+										</div>
+										<img src="../assets/images/main/brand04.png" alt="달시" class="brand" />
+									</div>
+									<div class="txt-bx">
+										<p class="comment">
+											“작은 업체 셀프계산대를 사용했는데, 너무 고장이 많았어요. <br class="d-none d-lg-block" />
+											대형마트에서도 사용하는 효성 제품은 정말 고장이 없더라고요”
+											<img src="../assets/images/main/quotes.png" alt="따옴표" class="quote" />
+										</p>
+										<span class="name">카페캔버스 본점</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-control">
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<!-- E : section -->
+
+			<section class="section intro-section py-15 py-lg-30">
+				<div class="container">
+					<div class="row flex-column-reverse flex-lg-row align-items-center wowrap">
+						<div class="col-12 col-lg-7 wow fadeInUp">
+							<img src="../assets/images/main/intro01.png" alt="이미지" />
+						</div>
+						<div class="col-12 col-lg-5 pl-2 pl-lg-10 mb-3 mb-lg-0 fadeInDown">
+							<div class="number mb-10">
+								<img src="../assets/images/main/number1.png" alt="1" />
+							</div>
+							<p class="tit pb-3">선불, 후불, KDS, KIOSK까지</p>
+							<p class="txt">
+								하나의 POS 프로그램에서 딱 맞는 화면을<br class="d-none d-lg-block" />
+								선택해서 쓰세요
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section intro-section bg-white py-15 py-lg-30">
+				<div class="container">
+					<div class="row flex-column flex-lg-row align-items-center wowrap">
+						<div class="col-12 col-lg-5 pr-0 pr-lg-10 mb-3 mb-lg-0 wow fadeInUp">
+							<div class="number mb-10">
+								<img src="../assets/images/main/number2.png" alt="2" />
+							</div>
+							<p class="tit pb-3">매장을 한눈에</p>
+							<p class="txt">
+								매출 확인을 한눈에!<br class="d-none d-lg-block" />
+								쉽게 상품을 등록하고 가격 변경도 한번에!
+							</p>
+						</div>
+						<div class="col-12 col-lg-7 wow fadeInDown">
+							<img src="../assets/images/main/intro02.png" alt="이미지" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section intro-section py-15 py-lg-30">
+				<div class="container">
+					<div class="row flex-column-reverse flex-lg-row align-items-center wowrap">
+						<div class="col-12 col-lg-7 wow fadeInUp">
+							<img src="../assets/images/main/intro03.png" alt="이미지" />
+						</div>
+						<div class="col-12 col-lg-5 pl-2 pl-lg-10 mb-3 mb-lg-0 wow fadeInDown">
+							<div class="number mb-10">
+								<img src="../assets/images/main/number3.png" alt="3" />
+							</div>
+							<p class="tit pb-3">배달 주문도 한번에</p>
+							<p class="txt">
+								배민, 쿠팡이츠, 요기요 등 주요 배달APP 모두 지원<br class="d-none d-lg-block" />
+								90여개 배달대행사 지원
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section inquiry-section py-15 py-lg-30">
+				<div class="container">
+					<div class="row flex-column flex-lg-row wowrap">
+						<div class="col wow fadeIn">
+							<div class="txt-bx mb-10 mb-lg-0">
+								<p class="tit">
+									궁금하거나 필요한 것은 언제든지<br class="d-none d-lg-block" />
+									말씀해 주세요
+								</p>
+								<p class="txt"><img src="../assets/images/main/mini-quote.png" alt="quotes" />&nbsp;사장님의 말씀에 하나도 놓치지 않을게요&nbsp;<img src="../assets/images/main/mini-quote.png" alt="quotes" /></p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="inquiry-wrapper">
+								<a href="../story/qna.html" class="inquiry-item wow fadeIn">
+									<div class="ico">
+										<img src="../assets/images/main/ico01.png" alt="아이콘" class="color-ico" />
+										<img src="../assets/images/main/ico01-w.png" alt="아이콘" class="white-ico" />
+									</div>
+									<p class="tit">자주하는 질문</p>
+									<p class="txt">많이들 궁금해 하시는 <br class="d-none d-lg-block" />내용을 모아 놨어요</p>
+								</a>
+								<a href="javascript:void(0)" class="inquiry-item wow fadeIn">
+									<div class="ico">
+										<img src="../assets/images/main/ico02.png" alt="아이콘" class="color-ico" />
+										<img src="../assets/images/main/ico02-w.png" alt="아이콘" class="white-ico" />
+									</div>
+									<p class="tit">문의하기</p>
+									<p class="txt">궁금한 내용은 <br class="d-none d-lg-block" />언제든지 문의 해주세요</p>
+								</a>
+								<a href="javascript:void(0)" class="inquiry-item wow fadeIn">
+									<div class="ico">
+										<img src="../assets/images/main/ico03.png" alt="아이콘" class="color-ico" />
+										<img src="../assets/images/main/ico03-w.png" alt="아이콘" class="white-ico" />
+									</div>
+									<p class="tit">개선요청 하기</p>
+									<p class="txt">
+										효성 POS에 필요한 <br class="d-none d-lg-block" />
+										기능이나 의견이 있으시면 <br class="d-none d-lg-block" />
+										말씀해 주세요
+									</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<? include "../include/footer.html" ?>
+		<? include "../include/js.html" ?>
+		<script>
+			var slideText = ['POS', 'NOTEBOOK', 'TABLET', 'KIOSK'];
+
+			// 아이콘 권장사이즈 30*30
+			var slideImg = ['../assets/images/icon/main-ico1.png', '../assets/images/icon/main-ico2.png', '../assets/images/icon/main-ico3.png', '../assets/images/icon/main-ico4.png'];
+
+			var slideHover = ['../assets/images/icon/active-ico1.png', '../assets/images/icon/active-ico2.png', '../assets/images/icon/active-ico3.png', '../assets/images/icon/active-ico4.png'];
+
+			var visualSwiper = new Swiper('.main-visual .swiper-container', {
+				loop: true,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true,
+				},
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				autoHeight: true,
+				pagination: {
+					el: '.main-visual .swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<div class="' + className + '">' + '<img src=" ' + slideImg[index] + ' " class="white-ico">' + '<img src=" ' + slideHover[index] + ' " class="black-ico">' + '<span class="text" >' + slideText[index] + '</span>' + '</div>';
+					},
+				},
+				navigation: {
+					nextEl: '.main-visual .swiper-button--next',
+					prevEl: '.main-visual .swiper-button--prev',
+				},
+			});
+
+			/* 서비스 스와이퍼*/
+			function initSwiper() {
+				//pc에서는 swiper 해제
+				serviceSwiper = new Swiper('.section1 .swiper-container', {
+					slidesPerView: 1.5,
+					spaceBetween: 20,
+					loop: false,
+					breakpoints: {
+						576: {
+							slidesPerView: 2, //브라우저가 768보다 클 때
+							spaceBetween: 20,
+						},
+						1200: {
+							slidesPerView: 2.5, //브라우저가 768보다 클 때
+							spaceBetween: 20,
+						},
+					},
+				});
+			}
+
+			$(window).on('resize', function () {
+				var ww = $(window).width();
+				if (ww < 1200) {
+					initSwiper();
+				}
+			});
+
+			var menu = ['일반식당', '배달전문식당', '카페', '무인매장', '프랜차이즈', '마트/편의점'];
+
+			var storeSwiper = new Swiper('.section2 .swiper-container', {
+				loop: true,
+				centeredSlides: true,
+				slidesPerView: 1,
+				spaceBetween: 80,
+				// autoHeight: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<div class="' + className + '">' + menu[index] + '</div>';
+					},
+				},
+				fadeEffect: {
+					crossFade: true,
+				},
+				// autoplay: {
+				// 	delay: 5000,
+				// 	disableOnInteraction: false,
+				// },
+				autoHeight: true,
+				navigation: {
+					nextEl: '.section2 .swiper-button--next',
+					prevEl: '.section2 .swiper-button--prev',
+				},
+				breakpoints: {
+					576: {
+						slidesPerView: 1,
+						spaceBetween: 40,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 40,
+					},
+					1600: {
+						slidesPerView: 2,
+						centeredSlides: false,
+						spaceBetween: 40,
+					},
+					1800: {
+						slidesPerView: 1.5,
+						centeredSlides: true,
+						spaceBetween: 80,
+					},
+				},
+			});
+
+			var ownerSwiper = new Swiper('.section3 .swiper-container', {
+				loop: true,
+				slidesPerView: 1.5,
+				spaceBetween: 40,
+				autoHeight: true,
+				pagination: {
+					el: '.section3 .swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+				},
+				fadeEffect: {
+					crossFade: true,
+				},
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				breakpoints: {
+					576: {
+						slidesPerView: 2,
+						spaceBetween: 40,
+					},
+					1200: {
+						slidesPerView: 3,
+						spaceBetween: 40,
+					},
+				},
+			});
+
+			var wowrap = $('.wowrap');
+			$(wowrap).each(function () {
+				$(this)
+					.find('.wow')
+					.each(function (index) {
+						var eq = index / 8 + 's';
+						$(this).attr('data-wow-delay', eq);
+					});
+				$(this)
+					.find('.animated')
+					.each(function (index) {
+						var eq = index * 250;
+						$(this).attr('data-id', 'delay-' + eq);
+					});
+			});
+		</script>
+	</body>
+</html>

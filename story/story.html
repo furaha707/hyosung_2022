@@ -1,0 +1,92 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+	<head>
+		<?
+    $P_dp1 = '5';
+    $P_dp2 = '1';
+    include "../include/meta.html" 
+    ?>
+		<link rel="stylesheet" href="../assets/css/story.min.css" />
+	</head>
+
+	<body class="sub-body">
+		<? include "../include/header.html" ?>
+		<? include "../include/sub-visual.html" ?>
+		<? include "../include/sub-nav.html" ?>
+		<main class="main sub-main" id="contents">
+			<section class="section pt-20 pb-30">
+				<div class="container">
+					<h4 class="sub-tit pb-15"><?=${nav_.$P_dp1._.$P_dp2}?></h4>
+					<div class="row story-wrap wowrap mt-0 mt-lg-10">
+						<div class="img-bx col-12 col-lg-6 wow fadeInDown">
+							<img src="../assets/images/main/review01-big.jpg" alt="반하다" />
+						</div>
+						<div class="txt-bx col-12 col-lg-6 wow fadeInDown">
+							<div class="inner">
+								<img src="../assets/images/sub/story-logo1.png" alt="반하다" class="logo" />
+								<img src="../assets/images/main/quotes.png" alt="따옴표" class="quote mt-5 mt-lg-10" />
+								<p class="txt mt-7 mb-4">
+									프랜차이즈 시작했을 때 막막했는데 효성이 다 알고 있더라고요.<br class="d-none d-xl-block" />
+									저는 선택만 하면 되니까 너무 편했어요
+								</p>
+								<p class="name">- 반하다앳 본점 -</p>
+							</div>
+						</div>
+					</div>
+					<div class="row story-wrap wowrap mt-30 mt-lg-20" id="reverse">
+						<div class="img-bx col-12 col-lg-6 wow fadeInDown">
+							<img src="../assets/images/main/review02-big.jpg" alt="누구나쉐프" />
+						</div>
+						<div class="txt-bx col-12 col-lg-6 wow fadeInDown">
+							<div class="inner">
+								<img src="../assets/images/sub/story-logo2.png" alt="누구나쉐프" class="logo" />
+								<img src="../assets/images/main/quotes.png" alt="따옴표" class="quote mt-5 mt-lg-10" />
+								<p class="txt mt-7 mb-4">
+									매장은 효성에게 맡기고,<br class="d-none d-xl-block" />
+									저는 제 일에만 집중할 수 있어 너무 좋아요.
+								</p>
+								<p class="name">- 누구나쉐프 답십리점 -</p>
+							</div>
+						</div>
+					</div>
+					<div class="row story-wrap wowrap mt-30 mt-lg-20">
+						<div class="img-bx col-12 col-lg-6 wow fadeInDown">
+							<img src="../assets/images/main/review03-big.jpg" alt="캔버스" />
+						</div>
+						<div class="txt-bx col-12 col-lg-6 wow fadeInDown">
+							<div class="inner">
+								<img src="../assets/images/sub/story-logo3.png" alt="캔버스" class="logo" />
+								<img src="../assets/images/main/quotes.png" alt="따옴표" class="quote mt-5 mt-lg-10" />
+								<p class="txt mt-7 mb-4">
+									진짜 최고의 KIOSK예요.<br class="d-none d-xl-block" />
+									화면도 너무 이쁘고 POS랑 매출연동도 돼요
+								</p>
+								<p class="name">- 카페캔버스 본점 -</p>
+							</div>
+						</div>
+					</div>
+					<div class="row story-wrap wowrap mt-30 mt-lg-20" id="reverse">
+						<div class="img-bx col-12 col-lg-6 wow fadeInDown">
+							<img src="../assets/images/main/review04-big.jpg" alt="달시" />
+						</div>
+						<div class="txt-bx col-12 col-lg-6 wow fadeInDown">
+							<div class="inner">
+								<img src="../assets/images/sub/story-logo4.png" alt="달시" class="logo" />
+								<img src="../assets/images/main/quotes.png" alt="따옴표" class="quote mt-5 mt-lg-10" />
+								<p class="txt mt-7 mb-4">
+									작은 업체 셀프계산대를 사용했는데, 너무 고장이 많았어요.<br class="d-none d-xl-block" />
+									대형마트에서도 사용하는 효성 제품은 정말 고장이 없더라고요.
+								</p>
+								<p class="name">- 달시 연기점 -</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<? include "../include/footer.html" ?>
+		<? include "../include/js.html" ?>
+		<script></script>
+	</body>
+</html>

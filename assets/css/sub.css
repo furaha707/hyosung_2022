@@ -1,0 +1,23 @@
+/* Made by Masstige */
+.apply-item {
+  background-color: white;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.apply-item .eng {
+  color: #8080ff;
+}
+.apply-item .des {
+  font-weight: 500;
+}
+.apply-item .link {
+  background-color: #8080ff;
+  color: white;
+}
+/*# sourceMappingURL=sub.css.map */

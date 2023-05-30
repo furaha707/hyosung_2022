@@ -1,0 +1,394 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+	<head>
+		<?
+    $P_dp1 = '1';
+    $P_dp2 = '1';
+    include "../include/meta.html" 
+    ?>
+		<link rel="stylesheet" href="../assets/css/service.min.css" />
+	</head>
+
+	<body class="sub-body">
+		<? include "../include/header.html" ?>
+		<? include "../include/sub-visual.html" ?>
+		<? include "../include/sub-nav.html" ?>
+		<main class="main sub-main" id="contents">
+			<section class="section pt-10 pt-lg-15 pb-20 pb-lg-40">
+				<div class="container wowrap">
+					<h4 class="sub-tit pt-6 pt-lg-12 pb-7 pb-lg-15 wow fadeIn"><?=${nav_.$P_dp1._.$P_dp2}?></h4>
+					<img src="../assets/images/sub/pos-top.jpg" alt="" class="wow fadeIn" />
+					<p class="sub-txt mt-5 wow fadeIn">
+						간단하고 장애 없는 효성 POS가<br class="d-block d-lg-none" />
+						사장님의 매출을 올려드릴께요
+					</p>
+				</div>
+			</section>
+			<section class="section apply-section bg-main py-15 py-lg-30">
+				<div class="container">
+					<h4 class="sub-tit pb-10">신청하기</h4>
+					<div class="swiper-container">
+						<div class="swiper-wrapper wowrap">
+							<div class="swiper-slide wow fadeInUp">
+								<div class="apply-item hover-effect hover-effect--border">
+									<div class="inner hover-effect__wrap">
+										<span class="eng">Hyosung POS Essential</span>
+										<p class="des">POS 있어요. 프로그램만 쓸게요</p>
+										<img src="../assets/images/icon/apply01.png" alt="아이콘" class="img" />
+										<a href="../application/write.html" class="link">사용신청 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide wow fadeInDown">
+								<div class="apply-item hover-effect hover-effect--border">
+									<div class="inner hover-effect__wrap">
+										<span class="eng">Hyosung POS Starter</span>
+										<p class="des">아무것도 없어요. 하드웨어도 살게요</p>
+										<img src="../assets/images/icon/apply02.png" alt="아이콘" class="img" />
+										<a href="../application/write.html" class="link">사용신청 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide wow fadeInUp">
+								<div class="apply-item hover-effect hover-effect--border">
+									<div class="inner hover-effect__wrap">
+										<span class="eng">Hyosung POS Enterprise</span>
+										<p class="des">VAN대리점, 프랜차이즈 본사 전용</p>
+										<img src="../assets/images/icon/apply03.png" alt="아이콘" class="img" />
+										<a href="../application/write.html" class="link">사용신청 <i class="xi-angle-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section des-section py-15 py-lg-30">
+				<div class="container">
+					<h1 class="sub-tit text-center text-lg-left mb-15">주요기능</h1>
+					<div class="row align-items-center flex-column flex-lg-row wowrap">
+						<div class="col-12 col-lg-5 pr-10 mb-5 mb-lg-0 position-relative wow fadeInDown">
+							<div class="number mb-10">01</div>
+							<p class="des pb-5">사용하던 POS와 똑같아요</p>
+							<ul class="check-bx">
+								<li class="check-list">지금 사용하고 계신 POS와 동일한 화면</li>
+								<li class="check-list">사용하시던 기능을 그대로</li>
+							</ul>
+							<img src="../assets/images/icon/monitor.png" alt="아이콘" class="ico-bg" />
+						</div>
+						<div class="col-12 col-lg-7 wow fadeInUp">
+							<img src="../assets/images/sub/postlist.gif" alt="이미지" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section des-section bg-main py-15 py-lg-30">
+				<div class="container">
+					<div class="row flex-column-reverse flex-lg-row align-items-start align-items-lg-center wowrap">
+						<div class="col-12 col-lg-7 wow fadeInDown">
+							<img src="../assets/images/sub/post-list2.png" alt="이미지" />
+						</div>
+						<div class="col-12 col-lg-5 pl-2 pl-lg-20 mb-5 mb-lg-0 position-relative wow fadeInUp">
+							<div class="number mb-10">02</div>
+							<p class="des pb-5">POS를 바꿔도 기존 정보 그대로</p>
+							<ul class="check-bx">
+								<li class="check-list">POS를 바꿔도 매출, 고객정보는 그대로</li>
+								<li class="check-list">메뉴, 화면도 그대로</li>
+							</ul>
+							<img src="../assets/images/icon/saw.png" alt="아이콘" class="ico-bg" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section des-section py-15 py-lg-30">
+				<div class="container">
+					<div class="row align-items-center wowrap">
+						<div class="col-12 col-lg-5 pr-2 pr-lg-10 mb-5 mb-lg-0 position-relative wow fadeInDown">
+							<div class="number mb-10">03</div>
+							<p class="des pb-5">다양한 결제 수단 지원</p>
+							<ul class="check-bx">
+								<li class="check-list">삼성페이는 물론 카카오, 네이버 페이까지</li>
+								<li class="check-list">국내 모든 VAN사 지원</li>
+							</ul>
+							<img src="../assets/images/icon/credit.png" alt="아이콘" class="ico-bg" />
+						</div>
+						<div class="col-12 col-lg-7 wow fadeInUp">
+							<div class="row logo-wrapper">
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand01.png" alt="삼성페이" />
+									</div>
+									<p class="name">삼성페이</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand02.png" alt="카카오페이" />
+									</div>
+									<p class="name">카카오페이</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand03.png" alt="네이버페이" />
+									</div>
+									<p class="name">네이버페이</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand04.png" alt="나이스정보통신" />
+									</div>
+									<p class="name">나이스정보통신</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand05.png" alt="KIS정보통신" />
+									</div>
+									<p class="name">KIS정보통신</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand06.png" alt="금융결제원(KFTC)" />
+									</div>
+									<p class="name">금융결제원(KFTC)</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand07.png" alt="SMARTRO" />
+									</div>
+									<p class="name">SMARTRO</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand08.png" alt="KSNET" />
+									</div>
+									<p class="name">KSNET</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand09.png" alt="KICC" />
+									</div>
+									<p class="name">KICC</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand10.png" alt="KCP (한국사이버결제)" />
+									</div>
+									<p class="name">KCP (한국사이버결제)</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand11.png" alt="FDK (퍼스트데이터)" />
+									</div>
+									<p class="name">FDK (퍼스트데이터)</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand12.png" alt="JTNET" />
+									</div>
+									<p class="name">JTNET</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand13.png" alt="SPC" />
+									</div>
+									<p class="name">SPC</p>
+								</div>
+								<div class="col-6 col-md-3 mb-5">
+									<div class="logo">
+										<img src="../assets/images/icon/credit-brand14.png" alt="Daoudata(다우데이터)" />
+									</div>
+									<p class="name">Daoudata(다우데이터)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section des-section bg-main py-15 py-lg-30">
+				<div class="container">
+					<div class="row flex-column-reverse flex-lg-row align-items-center wowrap">
+						<div class="col-12 col-lg-7 wow fadeInDown">
+							<img src="../assets/images/sub/post-list4.png" alt="이미지" />
+						</div>
+						<div class="col-12 col-lg-5 pl-2 pl-lg-10 position-relative wow fadeInUp">
+							<div class="number mb-10">04</div>
+							<p class="des pb-5">Kiosk 매출도 한번에 확인</p>
+							<ul class="check-bx">
+								<li class="check-list">POS 매출과 Kiosk 매출을 한번에 확인</li>
+								<li class="check-list">Kiosk 주문을 POS에서 취소</li>
+							</ul>
+							<img src="../assets/images/icon/kiosk.png" alt="아이콘" class="ico-bg" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section des-section py-15 py-lg-30">
+				<div class="container">
+					<div class="row flex-column flex-lg-row align-items-start align-items-lg-center wowrap">
+						<div class="col-12 col-lg-5 pr-2 pr-lg-20 mb-5 mb-lg-0 position-relative wow fadeInDown">
+							<div class="number mb-10">05</div>
+							<p class="des pb-5">장애 걱정은 이제 끝</p>
+							<ul class="check-bx">
+								<li class="check-list">24시간 전국 A/S망 보유</li>
+								<li class="check-list">은행과 동일한 수준의 시스템 사용</li>
+							</ul>
+							<img src="../assets/images/icon/system.png" alt="아이콘" class="ico-bg" />
+						</div>
+						<div class="col-12 col-lg-7 text-center wow fadeInUp">
+							<img src="../assets/images/sub/post-list5.png" alt="이미지" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section store-section py-10 py-lg-20">
+				<div class="tit">주요 설치 점포 수</div>
+				<p class="counter text-sub font-weight-bold" data-value="15,000">15,000</p>
+				<div class="swiper-container mt-15">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand01.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand02.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand03.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand04.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand05.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand06.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand07.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand08.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand09.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand10.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand11.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand12.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand13.png" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../assets/images/icon/credit-brand14.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section py-15 py-lg-30">
+				<div class="container">
+					<h4 class="sub-tit pb-10">설치사례</h4>
+					<div class="row wowrap">
+						<div class="col-12 col-lg-4 mb-5 mb-lg-0 text-center wow zoomIn">
+							<img src="../assets/images/sub/case01.jpg" alt="설치사례" />
+						</div>
+						<div class="col-12 col-lg-4 mb-5 mb-lg-0 text-center wow zoomIn">
+							<img src="../assets/images/sub/case02.jpg" alt="설치사례" />
+						</div>
+						<div class="col-12 col-lg-4 text-center wow zoomIn">
+							<img src="../assets/images/sub/case03.jpg" alt="설치사례" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<? include "../include/footer.html" ?>
+		<? include "../include/js.html" ?>
+		<script>
+			function initSwiper() {
+				//pc에서는 swiper 해제
+				serviceSwiper = new Swiper('.apply-section .swiper-container', {
+					slidesPerView: 1.5,
+					spaceBetween: 20,
+					loop: false,
+					breakpoints: {
+						576: {
+							slidesPerView: 1.5, //브라우저가 768보다 클 때
+							spaceBetween: 20,
+						},
+						1024: {
+							slidesPerView: 3, //브라우저가 768보다 클 때
+							spaceBetween: 20,
+						},
+					},
+				});
+			}
+
+			$(window).on('resize', function () {
+				var ww = $(window).width();
+				if (ww < 1200) {
+					initSwiper();
+				}
+			});
+
+			var storeSwiper = new Swiper('.store-section .swiper-container', {
+				slidesPerView: '3',
+				autoplay: 0,
+				direction: 'horizontal',
+				centeredSlides: true,
+				loopedSlides: 3,
+				loop: true,
+				autoplay: {
+					delay: 0,
+				},
+				speed: 4000,
+				breakpoints: {
+					576: {
+						slidesPerView: 5, //브라우저가 768보다 클 때
+						spaceBetween: 20,
+					},
+					1024: {
+						slidesPerView: 'auto', //브라우저가 768보다 클 때
+						spaceBetween: 20,
+					},
+				},
+			});
+
+			var counterUp = window.counterUp.default;
+
+			var els = document.querySelectorAll('.counter');
+
+			// Start counting, typically you need to call this when the
+			// element becomes visible, or whenever you like.
+			for (var i = 0; i < els.length; i++) {
+				var el = els[i];
+
+				counterUp(el, {
+					duration: 1500,
+					delay: 20,
+				});
+			}
+
+			var wowrap = $('.wowrap');
+			$(wowrap).each(function () {
+				$(this)
+					.find('.wow')
+					.each(function (index) {
+						var eq = index / 8 + 's';
+						$(this).attr('data-wow-delay', eq);
+					});
+				$(this)
+					.find('.animated')
+					.each(function (index) {
+						var eq = index * 250;
+						$(this).attr('data-id', 'delay-' + eq);
+					});
+			});
+		</script>
+	</body>
+</html>

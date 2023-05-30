@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+.footer {
+	padding: rem(55) 0;
+	background: #fff;
+	color: #232425;
+	font-size: rem(14);
+	font-weight: 300;
+	border-top: 1px solid #ddd;
+	.container {
+		position: relative;
+	}
+	.inner {
+		display: flex;
+		justify-content: space-between;
+		@include mdq-max(lg) {
+			flex-direction: column;
+		}
+	}
+	&-logo {
+		flex: 0 0 300px;
+		max-width: 300px;
+		@include mdq-max(xxl) {
+			flex: 0 0 250px;
+			max-width: 250px;
+			img {
+				width: rem(180);
+			}
+		}
+		@include mdq-max(lg) {
+			flex: 1 1 auto;
+			max-width: 100%;
+			margin-bottom: 1rem;
+			img {
+				width: rem(100);
+				vertical-align: baseline;
+			}
+		}
+	}
+
+	&-info {
+		flex: 1 1 auto;
+		max-width: 100%;
+	}
+
+	&-link {
+		flex: 1 1 25%;
+		max-width: 25%;
+		@include mdq-max(lg) {
+			flex: 1 1 100%;
+			max-width: 100%;
+		}
+		.policy-link {
+			position: relative;
+			overflow: hidden;
+			left: -0.5em;
+			text-align: right;
+			@include mdq-max(lg) {
+				position: absolute;
+				top: 0;
+				right: 20px;
+			}
+			li {
+				position: relative;
+				display: inline-block;
+				padding: 0 0.5em;
+				font-weight: 300;
+				&:before {
+					content: '';
+					right: -1px;
+					height: 0.8em;
+					top: 50%;
+					margin-top: -0.4em;
+					position: absolute;
+					border-left: 1px solid lighten(#999, 10%);
+				}
+			}
+		}
+		.sns {
+			display: flex;
+			justify-content: flex-end;
+			margin: 0 -5px;
+			margin-top: 1rem;
+			@include mdq-max(lg) {
+				justify-content: space-between;
+			}
+			.list {
+				margin: 0 5px;
+				img {
+					filter: grayscale(1);
+				}
+			}
+			.homelink {
+				height: 100%;
+				background-color: #ebecf0;
+				color: #616163;
+				border-radius: 5px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 7px 10px;
+				margin: 0 5px;
+				white-space: nowrap;
+				i {
+					margin-left: 30px;
+				}
+			}
+		}
+	}
+	// 푸터 텍스트 구분선 스타일 샘플
+	&__txt {
+		position: relative;
+		overflow: hidden;
+		left: -0.5em;
+		.tit {
+			font-size: rem(16);
+			font-weight: bold;
+		}
+		.txt {
+			span {
+				position: relative;
+				display: inline-block;
+				padding: 0 0.5em;
+				&:before {
+					content: '';
+					left: -1px;
+					height: 0.8em;
+					top: 50%;
+					margin-top: -0.4em;
+					position: absolute;
+					border-left: 1px solid lighten(#999, 10%);
+				}
+			}
+		}
+		@include mdq-max(lg) {
+			left: 0;
+		}
+	}
+
+	.created-masstige {
+		.masstige {
+			font-weight: 500;
+		}
+		&:hover {
+			color: #7d67ff;
+		}
+	}
+}
